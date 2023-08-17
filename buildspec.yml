@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - echo "Running build commands..."
+  post_build:
+    commands:
+      - echo "Build completed."
+artifacts:
+  files: []
+  base-directory: /codebuild/output/src
